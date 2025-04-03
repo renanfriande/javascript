@@ -21,8 +21,7 @@ function verificar() {
     } else {  
         if (!sexM.checked && !sexF.checked) {
             window.alert("Por favor, selecione um sexo.");
-        } else {
-            main.style.height = '43vh'
+        } else {        
             container.style.display = 'flex'
             if (sexM.checked) {
                 msg.innerHTML = `Detectamos homem com ${idade} anos.`
