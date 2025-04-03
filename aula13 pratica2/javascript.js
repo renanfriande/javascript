@@ -1,23 +1,20 @@
-var txtnasc = document.getElementById('inasc')
-var nasc = Number(txtnasc.value)
-var sexM = document.getElementById('sexM')
-var sexF = document.getElementById('sexF')
-var main = document.getElementById('main')
-var container = document.getElementsByClassName('container')[0]
-var msg = document.getElementsByTagName('span')[1]
-var imagem = document.getElementsByClassName('imagem')[0]
-var ano = new Date()
-var anoatual = ano.getFullYear()
-var idade = anoatual-nasc
-
-window.onload = function() {
-    document.getElementById('sexM').checked = false;
-    document.getElementById('sexF').checked = false;
-}
-
-
-
 function verificar() {
+    var txtnasc = document.getElementById('inasc')
+    var nasc = Number(txtnasc.value)
+    var sexM = document.getElementById('sexM')
+    var sexF = document.getElementById('sexF')
+    var main = document.getElementById('main')
+    var container = document.getElementsByClassName('container')[0]
+    var msg = document.getElementsByTagName('span')[1]
+    var imagem = document.getElementsByClassName('imagem')[0]
+    var ano = new Date()
+    var anoatual = ano.getFullYear()
+    var idade = anoatual-nasc
+    window.onload = function() {
+        document.getElementById('sexM').checked = false;
+        document.getElementById('sexF').checked = false;
+    }
+
 
     if (nasc>anoatual || nasc<1900) {
         window.alert('ANO INVALIDO!')
