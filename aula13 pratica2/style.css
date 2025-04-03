@@ -63,3 +63,10 @@ div.imagem {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.521);
 }
 
+footer {
+    color: white;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.445);
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
