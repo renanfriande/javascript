@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de numeros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <header>
+        <h1>Analisador de Numeros</h1>
+    </header>
+    <main>
+        <div class="input">
+            <label for="inum">Numero (entre 1 e 100): </label>
+            <input type="number" name="num" id="inum">
+            <input type="button" value="Adicionar" id="adicionar" onclick="adicionar()">
+            <input type="button" value="Finalizar" id="finalizar" onclick="finalizar()">
+        </div>
+        <div class="output">
+            <span id="result"></span>
+            
+        </div>
+        <div class="output2">
+            <span id="result2"></span>
+        </div>
+    </main>
+    <footer>
+        <span>&copy <i>Curso em video</i></span>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
