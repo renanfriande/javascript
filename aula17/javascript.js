@@ -1,6 +1,5 @@
 let valores = []
 
-
 function adicionar() {
     let txtnum = document.getElementById('inum')
     let num = Number(txtnum.value)
@@ -12,25 +11,31 @@ function adicionar() {
     for(let i = 0; i < valores.length; i++) {
             if (num == valores[i]) {
                 window.alert('Numero ja foi digitado anteriormente')
+                txtnum.value = ''
+                txtnum.focus()
                 return
             }
         }
     if (num>100 || num<1 || isNaN(num)) {
         window.alert('Numero invalido!')
+        txtnum.value = ''
+        txtnum.focus()
         return
     } else {
         res.innerHTML += `Valor ${num} adicionado. <br>`
         valores.push(num)
     } 
     
+    txtnum.value = ''
+    txtnum.focus()
 }
 
 function finalizar() {
     let res = document.getElementById('result')
     let res2 = document.getElementById('result2')
     let soma = 0
-    let maior = -9999999
-    let menor = 99999999
+    let maior = valores[0]
+    let menor = valores[0]
 
     if(valores.length === 0) {
         window.alert('Adicione valores antes de finalizar!')
